@@ -12,28 +12,3 @@ Name-based search (autocomplete) – no Player IDs needed
 Per-position LightGBM models with rolling features
 Templated explanations endpoint (extendable to LLM later)
 Ready to wire SportsDataIO Projections for ensembling
-
-Repo Structure:
-fantasy-insights-ai/
-  backend/
-    app/
-      main.py
-      config.py
-      schemas.py
-      scoring.py
-      routers/ (predict, search, explain, admin)
-      services/ (sportsdata, etl)
-      store/ (db, models, migrations/0001_init.sql)
-      ml/ (train.py, infer.py)
-    Dockerfile
-    requirements.txt
-    .env.example
-  frontend/
-    src/ (App.tsx, components/, lib/api.ts, main.tsx, index.css)
-    package.json
-    vite.config.ts
-    tailwind.config.js
-    Dockerfile (optional)
-    .env.example
-  docker-compose.yml (optional, if you use it)
-  README.md
